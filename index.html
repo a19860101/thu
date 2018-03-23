@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Zac">
+    <meta name="viewport" content="width=device-width">
+    <title>網頁排版動畫輕鬆上手</title>
+    <link rel="stylesheet" href="reveal.js-master/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js-master/css/theme/night.css">
+    <!--    <link rel="stylesheet" href="reveal.js-master/css/print/pdf.css">-->
+    <link rel="stylesheet" href="reveal.js-master/css/print/paper.css">
+    <!--
+    Black (default)
+    White
+    League
+    Sky
+    Beige
+    Simple
+    Serif
+    Blood
+    Night
+    Moon
+    Solarized
+    -->
+    <!--    <script src="jquery-1.12.4.min.js"></script>-->
+    <style>
+        @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+        * {
+            font-family: "Noto Sans TC"!important;
+            letter-spacing: 4px!important;
+        }
+        
+        pre {
+            font-size: 30px!important;
+            margin-left: 15%!important;
+        }
+        h2 {
+            color: #c7c7c7!important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-transition="fade-out">
+                <h1>網頁排版動畫輕鬆上手</h1></section>
+            <section>
+                <h2>大家好</h2>
+                <p class="fragment fade-up">我是Zac</p>
+                <p class="fragment fade-up">講師歷9年</p>
+            </section>
+            <section>
+                <p>吃貨等級的電腦講師
+                    <br>熱愛所有的網站技術與影像處理技巧
+                    <br>外表癡肥但內心住個瘦子</p>
+            </section>
+            <section>
+                <p>平面設計</p>
+                <p>網頁前端設計</p>
+                <p>網站後端開發</p>
+            </section>
+            <section>
+                <p>萬能科大學業界講師</p>
+                <p>中國科技大學業界講師</p>
+                <p>健行科技大學業界講師</p>
+                <p>華梵大學業界講師</p>
+                <p>華夏科技大學業界講師</p>
+                <p>台北海院業界講師</p>
+                <p>致理科技大學業界講師</p>
+                <p>勞動力署桃竹苗分署講師</p>
+                <p>聯成電腦講師</p>
+                <p>赫綵電腦講師</p>
+                <p>裴恩設計事務所 創辦人兼技術總監</p>
+            </section>
+            <section>
+                <h2>Layout 排版</h2>
+            </section>
+            <section>
+                <h2>排版分類</h2>
+                <ul class="fragment fade-up">
+                    <li>固定排版</li>
+                    <li>彈性排版</li>
+                    <li>混合排版</li>
+                </ul>
+            </section>
+            <section>
+                <h2>排版技術</h2>
+                <ul>
+                    <li class="fragment">Table</li>
+                    <li class="fragment">Float</li>
+                    <li class="fragment">Flexbox</li>
+                    <li class="fragment">Framework</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Table 表格排版</h2>
+                <ul>
+                    <li class="fragment">軟體輔助</li>
+                    <li class="fragment">開發時間較短</li>
+                    <li class="fragment">修改時間又臭又長</li>
+                    <li class="fragment">不符合標準</li>
+                    <li class="fragment">適合不需修改的活動頁</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Float 浮動</h2>
+                <ul>
+                    <li class="fragment">標準</li>
+                    <li class="fragment">相容性高</li>
+                    <li class="fragment">開發時間較長</li>
+                    <li class="fragment">修改時間較短</li>
+                    <li class="fragment">浮動飄來飄去很煩</li>
+                    <li class="fragment">適合所有網站</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Flexbox 彈性盒子</h2>
+                <ul>
+                    <li class="fragment">標準</li>
+                    <li class="fragment">相容性較低</li>
+                    <li class="fragment">開發時間更短</li>
+                    <li class="fragment">沒有浮動問題</li>
+                    <li class="fragment">適合所有網站</li>
+                </ul>
+            </section>
+            <section>
+                <h2>CSS Frameworks CSS框架</h2>
+                <ul>
+                    <li class="fragment">標準</li>
+                    <li class="fragment">開發時間極短</li>
+                    <li class="fragment">沒有浮動問題</li>
+                    <li class="fragment">適合所有網站</li>
+                    <li class="fragment">肥大</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Box Model 盒子模型</h2>
+                <ul class="fragment">
+                    <li>width</li>
+                    <li>height</li>
+                    <li>margin</li>
+                    <li>padding</li>
+                    <li>border</li>
+                </ul>
+            </section>
+            <section>
+                <h2>寬度(高度)到底是多少？？？？</h2>
+            </section>
+            <section>
+                <h2>Box Model 預設值</h2>
+                <h3>總寬度 = width + padding + border</h3>
+            </section>
+            <section>
+                <h2>Box Model 設定 box-sizing</h2>
+                <h3>總寬度 = width</h3>
+            </section>
+            <section>
+                <h2>box-sizing:border-box;</h2>
+            </section>
+            <section>
+                <h2>浮動</h2>
+                <p>飄來飄去到底是要飄去哪？</p>
+            </section>
+            <section>
+                <h2>問題</h2>
+                <p>只要是浮動元素，他的父元素與相鄰元素都會發生問題</p>
+            </section>
+            <section>
+                <h2>解決方案</h2>
+                <ul>
+                    <li class="fragment">height</li>
+                    <li class="fragment">clear</li>
+                    <li class="fragment">overflow</li>
+                    <li class="fragment">clearfix</li>
+                </ul>
+            </section>
+            <section>
+                <h2>height</h2>
+                <p>將消失的高度補回去</p>
+                <p>
+                    height:60px;
+                </p>
+            </section>
+            <section>
+                <h2>clear</h2>
+                <p>
+                    清除對於浮動元素的影響
+                </p>
+                <p>
+                    clear:both;
+                </p>
+            </section>
+            <section>
+                <h2>overflow</h2>
+                <p>超出範圍自動補滿</p>
+                <p>overflow:auto;</p>
+            </section>
+            <section>
+                <h2>clearfix</h2>
+                <p>浮動修正</p>
+
+                <pre>
+                .clearfix::after {
+                        content:"";
+                        display:block;
+                        clear:both;
+                    } 
+                
+                </pre>
+            </section>
+            <section>
+                <h2>可不可以不要用float？？</h2>
+            </section>
+            <section>
+                <h2>inline-block</h2>
+                <p class="fragment">水平排版的另一解</p>
+
+            </section>
+            <section>
+                <h2>問題</h2>
+                <ul>
+                    <li>水平空隙</li>
+                    <li>垂直空隙</li>
+                </ul>
+            </section>
+            <section>
+                <h2>解決方案</h2>
+                <ul>
+                    <li>莫名其妙註解法</li>
+                    <li>莫名其妙垂直置中法</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Flexbox 彈性盒子</h2>
+                <p>display:flex;</p>
+            </section>
+            <section>
+                <h2>Flexbox</h2>
+                <ul>
+                    <li class="fragment">flex-direction</li>
+                    <li class="fragment">justify-content</li>
+                    <li class="fragment">align-items</li>
+                    <li class="fragment">align-self</li>
+                    <li class="fragment">flex-wrap</li>
+                </ul>
+            </section>
+            <section>
+                <h2>垂直置中</h2>
+                <ul>
+                    <li class="fragment">line-height</li>
+                    <li class="fragment">display:table</li>
+                    <li class="fragment">calc</li>
+                    <li class="fragment">absolute</li>
+                </ul>
+            </section>
+            <section>
+                <h2>高度100％</h2>
+                <ul>
+                    <li class="fragment">html,body</li>
+                    <li class="fragment">vh</li>
+                </ul>
+            </section>
+            <section>
+                <h2>CSS Frameworks</h2>
+                <ul>
+                    <li class="fragment">Bootstrap</li>
+                    <li class="fragment">PureCSS</li>
+                    <li class="fragment">Foundation</li>
+                    <li class="fragment">Semantic UI</li>
+                    <li class="fragment">Kube</li>
+                    <li class="fragment">YAML</li>
+                    <li class="fragment">Blueprint</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Transition 轉場</h2>
+            </section>
+            <section>
+                <h2>屬性</h2>
+                <ul class="fragment">
+                    <li>transition</li>
+                    <li>transition-property</li>
+                    <li>transition-duration</li>
+                    <li>transition-delay</li>
+                    <li>transition-timing-function</li>
+                </ul>
+            </section>
+            <section>
+                <h2>2D Transform 2D變形</h2>
+                <ul class="fragment">
+                    <li>transform-origin</li>
+                    <li>transform-style</li>
+                </ul>
+            </section>
+            <section>
+                <h2>屬性</h2>
+                <ul class="fragment">
+                    <li>scale()</li>
+                    <li>rotate()</li>
+                    <li>skew()</li>
+                    <li>translate()</li>
+                </ul>
+            </section>
+            <section>
+                <h2>3D Transform 3D變形</h2>
+            </section>
+            <section>
+                <h2>屬性</h2>
+                <ul class="fragment">
+                    <li>scaleX()</li>
+                    <li>scaleY()</li>
+                    <li>scaleZ()</li>
+                    <li>rotateX()</li>
+                    <li>rotateY()</li>
+                    <li>rotateZ()</li>
+                    <li>translateX()</li>
+                    <li>translateY()</li>
+                    <li>translateZ()</li>
+                    <li>perspective()</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Animations 動畫</h2>
+            </section>
+            <section>
+                <h2>屬性</h2>
+                <ul class="fragment">
+                    <li>@keyframes</li>
+                    <li>animation</li>
+                    <li>animation-name</li>
+                    <li>animation-duration</li>
+                    <li>animation-delay</li>
+                    <li>animation-iteration-count</li>
+                    <li>animation-direction</li>
+                    <li>animation-play-state</li>
+                    <li>animation-fill-mode</li>
+                    <li>animation-timing-function</li>
+                </ul>
+            </section>
+            <section>
+                <h2><a href="cube.html">CUBE</a></h2>
+            </section>
+        </div>
+    </div>
+
+</body>
+<script src="reveal.js-master/js/reveal.js"></script>
+<script>
+    Reveal.initialize();
+</script>
+
+</html>
